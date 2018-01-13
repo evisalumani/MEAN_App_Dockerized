@@ -9,7 +9,7 @@ services:
     ports:
       - 4200:80
     depends_on:
-      express-server-service
+      - express-server-service
 
   express-server-service:
     #image: my-express-server-image:v1
