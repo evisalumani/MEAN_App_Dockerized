@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+  # View app at machine-ip:4200
+  angular-service:
+    #image: my-angular-image:v1
+    #build: ./angular-client-app
+    image: evisalumani/angular-nginx-image:latest
+    ports:
+      - 4200:80
