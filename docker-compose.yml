@@ -8,3 +8,20 @@ services:
     image: evisalumani/angular-nginx-image:latest
     ports:
       - 4200:80
+    depends_on:
+      express-server-service
+
+  express-server-service:
+    #image: my-express-server-image:v1
+    #build: ./express-server
+    image: evisalumani/mean-express-image:latest
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongo-service
+
+  mongo-service:
+    image: mongo:latest
+    ports: 
+      - 27017:27017
+
