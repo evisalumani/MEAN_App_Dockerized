@@ -1,16 +1,3 @@
-/*
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
-})
-export class AppComponent {
-  title = 'app works!';
-}
-*/
-
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 
@@ -27,11 +14,10 @@ export class AppComponent implements OnInit {
 
   // Link to our api, pointing to localhost
   // We are connecting to port 3000 exposed from express service
-  // API = 'http://localhost:3000';
-  // API = 'http://express-server-service:3000';
-  API = 'express-server-service';
+  API = 'http://localhost:3000';
 
   /**
+   * API = 'express-server-service';
    * API = 'http://express-server-service:3000'; // Doesn't work :(
    * Even though executing it from inside the container works
    * root@dbd5a7987bc7:/usr/src/app# curl http://express-server-service:3000/users
