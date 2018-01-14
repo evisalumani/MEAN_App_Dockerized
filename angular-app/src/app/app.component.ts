@@ -27,7 +27,9 @@ export class AppComponent implements OnInit {
 
   // Link to our api, pointing to localhost
   // We are connecting to port 3000 exposed from express service
-  API = 'http://localhost:3000';
+  // API = 'http://localhost:3000';
+  // API = 'http://express-server-service:3000';
+  API = 'express-server-service';
 
   /**
    * API = 'http://express-server-service:3000'; // Doesn't work :(
