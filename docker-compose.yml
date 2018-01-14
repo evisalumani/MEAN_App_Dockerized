@@ -4,7 +4,7 @@ services:
   # View app at machine-ip:4200
   angular-service:
     #image: my-angular-image:v1
-    #build: ./angular-client-app
+    #build: ./angular-app
     image: evisalumani/angular-nginx-image:latest
     ports:
       - 4200:80

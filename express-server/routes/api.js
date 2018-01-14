@@ -4,10 +4,9 @@ const express = require('express');
 const router = express.Router();
 
 // MongoDB URL from the docker-compose file
-// const dbHost = 'mongodb://database/mean-docker';
 // Services are reachable via their names!
-// URL 'mongodb://service name declared in docker-compose.yml (+ its exposed port) / database name'
-// if database doesn't exist it will be created
+// URL 'mongodb://service name declared in docker-compose.yml / database name'
+// If database doesn't exist it will be created
 const dbHost = 'mongodb://mongo-service/mean-docker'
 
 // Connect to mongodb
