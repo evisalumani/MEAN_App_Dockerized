@@ -42,7 +42,7 @@ router.get('/users', (req, res) => {
 
 /* GET one users. */
 router.get('/users/:id', (req, res) => {
-    User.findById(req.param.id, (err, users) => {
+    User.findById(req.params.id, (err, users) => {
         if (err) res.status(500).send(error)
 
         res.status(200).json(users);

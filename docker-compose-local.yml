@@ -1,20 +1,19 @@
+# Deploy as: docker-compose -f docker-compse-local.yml up
 version: "3"
 services:
 
   # View app at machine-ip:4200
   angular-service:
-    #image: my-angular-image:v1
-    #build: ./angular-app
-    image: evisalumani/angular-nginx-image:latest
+    # Build image from Dockerfile in this location
+    build: ./angular-app
     ports:
       - 4200:80
     depends_on:
       - express-server-service
 
   express-server-service:
-    #image: my-express-server-image:v1
-    #build: ./express-server
-    image: evisalumani/mean-express-image:latest
+    # Build image from Dockerfile in this location
+    build: ./express-server
     ports:
       - 3000:3000
     depends_on:
@@ -24,4 +23,3 @@ services:
     image: mongo:latest
     ports: 
       - 27017:27017
-
