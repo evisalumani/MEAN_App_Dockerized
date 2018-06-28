@@ -14,6 +14,8 @@ export class AppComponent implements OnInit {
 
   // Link to our api, pointing to localhost
   // We are connecting to port 3000 exposed from express service
+  // If running on swarm or k8s this requires <VM/minikube IP>:<port>
+  // Note: if it's a swarm, then it can be the IP of any of the VMs; How about k8s?
   API = 'http://localhost:3000';
 
   /**

@@ -1,4 +1,4 @@
-# Deploy as: docker stack deploy -f docker-compse-local.yml appName
+# Deploy as: docker stack deploy -c docker-compose-swarm.yml appName
 # Images must be built locally, tagged and then pushed to DockerHub accordingly
 version: "3"
 services:
