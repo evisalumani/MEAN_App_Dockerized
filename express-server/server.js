@@ -32,7 +32,7 @@ import * as settings from './utilities/settings';
 
 
 //routes
-// import api from './routes/api';
+import api from './routes/api';
 import authRoutes from './routes/auth.routes';
 import themeRoutes from './routes/theme.routes';
 import stockRoutes from './routes/stock.routes';
